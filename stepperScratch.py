@@ -13,9 +13,9 @@ devices.append(stepper)
 try:
     while True:
         stepper.on()
-        sleep(0.01)
+        sleep(0.0006)
         stepper.off()
-        sleep(0.01)
+        sleep(0.0006)
 except KeyboardInterrupt:
     print("Cleaning up GPIO")
 finally: 
